@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+}
+.modal-content {
+    position: fixed;
+    bottom: 0;
+    background-color: #fefefe;
+    width: 100%;
+}
+</style>
 <script src="myscript.js"></script>
 </head>
 <body>
@@ -17,9 +34,14 @@
 <button type="button" onclick="selectDelete()">Select and Delete</button>
 <button type="button" onclick="showImage()">Image Button</button>
 <button type="button" onclick="smallerImage()">Smaller Button</button>
+<button id="modalBtn" onclick="openModal()">Open Modal</button>
+<div id="imageHolder"> </div>
 
-<div id="imageHolder"> 
 
+<div id="modalBox" class="modal">
+	<div class="modal-content">
+		<h1>Hi Emma</h1>
+	</div>
 </div>
 
 </body>
