@@ -30,11 +30,17 @@ function openModal() {
 	modal.style.display = "block";
 }
 
+function closeModal() {
+	var modal = document.getElementById("modalBox");
+	var close = document.getElementsByClassName("close")[0];
+	modal.style.display = "none";
+}
+
 /*function selectDelete() {
 	var selectBox = document.getElementById("cars");
 	selectBox.remove(selectBox.selectedIndex)
 }
-function showImage() {
+function showImage() 
 	var emmaImg = document.createElement("img");
  	emmaImg.src = "emma.jpg";
  	emmaImg.id = "emmaImage"

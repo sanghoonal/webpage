@@ -6,16 +6,26 @@
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
+    padding-top: 100px;
     left: 0;
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 .modal-content {
     position: fixed;
     bottom: 0;
+    padding: 20px;
     background-color: #fefefe;
-    width: 100%;
+    width: 80%;
+}
+.close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
 }
 </style>
 <script src="myscript.js"></script>
@@ -40,7 +50,8 @@
 
 <div id="modalBox" class="modal">
 	<div class="modal-content">
-		<h1>Hi Joan you watch too many dramas. Hi Andrew you play too much overwatch.</h1>
+		<h1>Hi Andrew</h1>
+		<span class="close" onclick="closeModal()">x</span>
 	</div>
 </div>
 
