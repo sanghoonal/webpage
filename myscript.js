@@ -12,11 +12,10 @@ function showImage() {
 
 function smallerImage() {
 	var small = document.getElementById("emmaImage").style.width="50%";
-	var t = document.getElementById("emmaImage")
+	/*var t = document.getElementById("emmaImage")
 	t.appendChild(small)
-	document.getElementById(t).appendChild(small)
+	document.getElementById(t).appendChild(small)*/
 	
-
 }
 // var modal = document.getElementById("modalBox");
 // var btn = document.getElementById("modalBtn");
@@ -36,6 +35,10 @@ function closeModal() {
 	modal.style.display = "none";
 }
 
+document.getElementById("hover").addEventListener("mouseover",hoverOver);
+function hoverOver() {
+	document.getElementById("hover").style.color = "red";
+}
 /*function selectDelete() {
 	var selectBox = document.getElementById("cars");
 	selectBox.remove(selectBox.selectedIndex)
