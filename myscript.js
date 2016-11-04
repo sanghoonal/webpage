@@ -61,6 +61,14 @@ function zoomOut() {
 
 }*/
 
+FACTOR = 0.7
+function smaller() {
+	var height = document.getElementById("birds").height * FACTOR
+	var width = document.getElementById("birds").width * FACTOR
+	document.getElementById("birds").width = width
+	document.getElementById("birds").height=height
+}
+
 /*var img = document.getElementById("img")
 	var w = img.width
 	w = "50%"
